@@ -12,6 +12,10 @@
   h1 {
     padding: 15px;
     color: @header-font-color;
+
+    @media @phone {
+      padding-bottom: 19px;
+    }
   }
 }
 
@@ -31,7 +35,7 @@
     h2 {
       padding: 15px;
       @media @phone {
-        padding: 20px;
+        padding: 15px;
       }
 
 
@@ -39,9 +43,6 @@
 
     p {
       padding:0 15px;
-      @media @phone {
-        padding: 0 20px;
-      }
     }
   
   }
@@ -50,6 +51,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height:auto;
 
 
 
@@ -69,6 +71,7 @@
 
       @media @phone {
         width: 100%;
+        height: auto;
         margin: 0;
         padding: 10px 25px;
         border-radius: 10%;
@@ -83,7 +86,7 @@
     padding: 15px;
 
     @media @phone {
-      padding: 0 20px;
+      padding-top: 35px;
     }
 
     h3 {
@@ -105,7 +108,7 @@
     @media @phone {
       flex-direction: column-reverse; 
       margin-top: 5px;
-      padding: 10px 20px;
+      padding: 35px 20px;
     }
 
     .walk-text {
@@ -113,7 +116,7 @@
 
       @media @phone {
         width: 100%;
-        padding-top: 20px;
+        padding-top: 27px;
       }
 
       h3 {
@@ -128,10 +131,11 @@
         .btn(@btn-bg-color, @porcelain);
         width: 30%;
         border-radius: 10px;
+  
 
         @media @phone {
           width: 100%;
-          padding: 20px;
+          padding: 31px 25px;
         }
       }
     }
