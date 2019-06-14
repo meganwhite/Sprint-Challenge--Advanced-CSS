@@ -1,1 +1,17 @@
 // Navigation code here
+
+nav {
+    .flex(space-between,center);
+
+    a {
+      padding: 0 15px 15px 15px;
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: @nav-font;
+
+      @media @phone {
+        padding: 0 16px 11px 16px;
+        font-size: 1.6rem;
+      }
+    }
+  }
